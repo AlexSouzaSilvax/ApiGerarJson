@@ -3,10 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/guana/Desktop/FazendaWebService/src/java/Usuario/Vendas.java</file>
-            <file>file:/C:/Users/guana/Desktop/FazendaWebService/src/java/Usuario/VendasDAO.java</file>
-            <file>file:/C:/Users/guana/Desktop/FazendaWebService/src/java/ws/FazendaWS.java</file>
-            <file>file:/C:/Users/guana/Desktop/FazendaWebService/src/java/ws/ApplicationConfig.java</file>
+            <file>file:/C:/Users/guana/Desktop/apiJson/src/java/ws/GxsVendas.java</file>
+            <file>file:/C:/Users/guana/Desktop/apiJson/src/java/ws/ApplicationConfig.java</file>
+            <file>file:/C:/Users/guana/Desktop/apiJson/src/java/ws/GxsVendas1.java</file>
         </group>
     </open-files>
 </project-private>

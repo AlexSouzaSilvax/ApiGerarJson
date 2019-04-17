@@ -1,12 +1,14 @@
 package Vendas;
 
+import java.sql.Date;
+
 public class Vendas {
 
     private String id;
     private String idUsuario;
     private String nomeProduto;
     private String qtd;
-    private String dtVenda;
+    private Date dtVenda;
 
     public String getId() {
         return id;
@@ -40,11 +42,11 @@ public class Vendas {
         this.qtd = qtd;
     }
 
-    public String getDtVenda() {
+    public Date getDtVenda() {
         return dtVenda;
     }
 
-    public void setDtVenda(String dtVenda) {
+    public void setDtVenda(Date dtVenda) {
         this.dtVenda = dtVenda;
     }
 

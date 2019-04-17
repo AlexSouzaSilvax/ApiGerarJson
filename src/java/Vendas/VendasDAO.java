@@ -27,7 +27,7 @@ public class VendasDAO {
                 v.setIdUsuario(rs.getString("idUsuario"));
                 v.setNomeProduto(rs.getString("nomeProduto"));
                 v.setQtd(rs.getString("qtd"));
-                v.setDtVenda(rs.getString("dtVenda"));
+                v.setDtVenda(rs.getDate("dtVenda"));
 
                 listaVendas.add(v);
             }
@@ -42,4 +42,26 @@ public class VendasDAO {
         }
     }
 
+    public Vendas inserir(Vendas v) {
+
+        try {
+            Connection conexao = Conexao.getConexao();
+            PreparedStatement ps;
+
+            ps = conexao.prepareStatement("INSERT INTO `vendas` (`idUsuario`,`nomeProduto`,`qtd`,`dtVenda`) VALUES (?,?,?,?)");
+
+            ps.setString(1, v.getIdUsuario());
+            ps.setString(2, v.getNomeProduto());
+            ps.setString(3, v.getQtd());
+            ps.setDate(4, v.getDtVenda());
+
+            ps.execute();
+            Conexao.fecharConexao();
+
+            System.out.println("Salvo com sucesso. ID: " + v.getId());
+        } catch (SQLException ex) {
+            System.out.println("Erro ao salvar DAO " + ex.getMessage());
+        }
+        return v;
+    }
 }

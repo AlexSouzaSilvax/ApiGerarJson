@@ -5,11 +5,7 @@
  */
 package ws;
 
-import Vendas.Vendas;
-import Vendas.VendasDAO;
 import com.google.gson.Gson;
-import java.util.ArrayList;
-import java.util.List;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.UriInfo;
 import javax.ws.rs.Produces;
